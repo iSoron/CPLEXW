@@ -1,4 +1,4 @@
 deps/build.log
 deps/deps.jl
-gen
+gen/output
 Manifest.toml
