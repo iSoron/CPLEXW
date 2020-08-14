@@ -14,7 +14,7 @@ function write_depsfile(path)
 end
 
 base_env = "CPLEX_STUDIO_BINARIES"
-const cpxvers = ["128", "1280", "129", "1290"]
+const cpxvers = ["128", "1280", "129", "1290", "1210", "12100"]
 
 libnames = String["cplex"]
 for v in reverse(cpxvers)
@@ -28,7 +28,7 @@ for v in reverse(cpxvers)
     end
 end
 
-const wincpxvers = ["128", "1280", "129", "1290"]
+const wincpxvers = ["128", "1280", "129", "1290", "1210", "12100"]
 @static if Sys.iswindows()
     for v in reverse(wincpxvers)
         env = base_env * v
